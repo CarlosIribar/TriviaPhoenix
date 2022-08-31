@@ -1,0 +1,43 @@
+<h1>Show Question</h1>
+
+<ul>
+
+  <li>
+    <strong>Answer 1:</strong>
+    <%= @question.answer1 %>
+  </li>
+
+  <li>
+    <strong>Question2:</strong>
+    <%= @question.answer2 %>
+  </li>
+
+  <li>
+    <strong>Question3:</strong>
+    <%= @question.answer3 %>
+  </li>
+
+  <li>
+    <strong>Question4:</strong>
+    <%= @question.answer4 %>
+  </li>
+
+  <li>
+    <strong>answer:</strong>
+    <%= @question.answer %>
+  </li>
+
+  <li>
+    <strong>Valid:</strong>
+    <%= @question.valid %>
+  </li>
+
+  <li>
+    <strong>Creator:</strong>
+    <%= @question.creator %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.question_path(@conn, :edit, @question) %></span> |
+<span><%= link "Back", to: Routes.question_path(@conn, :index) %></span>
